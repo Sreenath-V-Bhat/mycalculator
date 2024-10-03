@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height:100%;
+}
+body{
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
+.container{
+    border:solid 4px grey;
+    height:46rem;
+    width:27rem;
+    border-radius: 1rem;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+p{
+    text-align: center;
+    font-size:1.5rem;
+}
+.display{
+    margin:3rem 0rem;
+    width:27rem;
+    border:solid 2px orange;
+    height:5rem;
+    border-radius: 1rem;
+    color:white;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.display>p{
+    padding:1rem;
+}
+.buttons{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: space-around;
+
+}
+.btn{
+    background-color: grey;
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+}
+.yellow{
+    background-color: orange;
+}
+.height{
+    height:2.3rem;
+}
+.height1{
+    height:2rem;
+}
+.btn:hover{
+    background-color: rgb(113, 112, 112);
+}
+@media(max-width:600px){
+    .display{
+        width:15rem;
+        margin-top:2rem;
+        margin-bottom: 2rem;
+    }
+    .container{
+        height:30rem;
+        width:15rem;
+        border:2px solid grey;
+    }
+    .btn{
+        height:3rem;
+        width:3rem;
+    }
+    .height1{
+        height:1.3rem;
+    }
+
+}
